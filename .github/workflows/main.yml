@@ -27,11 +27,11 @@ jobs:
 
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-         skopeo copy docker://docker.io/library/openjdk:8u342 docker://crpi-b3hn9ts05cp0mm2k.cn-chengdu.personal.cr.aliyuncs.com/base-common-image/openjdk:8u342
-         skopeo copy docker://docker.io/library/mysql:8.0.22 docker://crpi-b3hn9ts05cp0mm2k.cn-chengdu.personal.cr.aliyuncs.com/base-common-image/mysql:8.0.22
-         skopeo copy docker://docker.io/library/emqx:4.4.19 docker://crpi-b3hn9ts05cp0mm2k.cn-chengdu.personal.cr.aliyuncs.com/base-common-image/emqx:4.4.19
-         skopeo copy docker://docker.io/library/redis:6.0.20 docker://crpi-b3hn9ts05cp0mm2k.cn-chengdu.personal.cr.aliyuncs.com/base-common-image/redis:6.0.20
-         skopeo copy docker://docker.io/library/nginx:stable-alpine3.20-perl docker://crpi-b3hn9ts05cp0mm2k.cn-chengdu.personal.cr.aliyuncs.com/base-common-image/nginx:stable-alpine3.20-perl
+         skopeo copy docker://docker.io/library/bitnami/minio:2024.9.13 docker://crpi-b3hn9ts05cp0mm2k.cn-chengdu.personal.cr.aliyuncs.com/base-common-image/bitnami/minio:2024.9.13
+         skopeo copy docker://docker.io/library/nacos/nacos-server:v2.4.2 docker://crpi-b3hn9ts05cp0mm2k.cn-chengdu.personal.cr.aliyuncs.com/base-common-image/nacos/nacos-server:v2.4.2
+         skopeo copy docker://docker.io/library/tdengine/tdengine:3.3.2.0 docker://crpi-b3hn9ts05cp0mm2k.cn-chengdu.personal.cr.aliyuncs.com/base-common-image/tdengine/tdengine:3.3.2.0
+         skopeo copy docker://docker.io/library/rabbitmq:management docker://crpi-b3hn9ts05cp0mm2k.cn-chengdu.personal.cr.aliyuncs.com/base-common-image/rabbitmq:management
+         skopeo copy docker://docker.io/library/bitnami/kafka:3.3.2 docker://crpi-b3hn9ts05cp0mm2k.cn-chengdu.personal.cr.aliyuncs.com/base-common-image/bitnami/kafka:3.3.2
          
          
          
