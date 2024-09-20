@@ -27,7 +27,11 @@ jobs:
 
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-         skopeo copy docker://docker.io/library/openjdk:8u342 docker://crpi-547j5l724sxidzmd.cn-chengdu.personal.cr.aliyuncs.com/yzbd-base-image/openjdk:8u342
+         skopeo copy docker://docker.io/library/openjdk:8u342 docker://crpi-b3hn9ts05cp0mm2k.cn-chengdu.personal.cr.aliyuncs.com/base-common-image/openjdk:8u342
+         skopeo copy docker://docker.io/library/mysql:8.0.22 docker://crpi-b3hn9ts05cp0mm2k.cn-chengdu.personal.cr.aliyuncs.com/base-common-image/mysql:8.0.22
+         skopeo copy docker://docker.io/library/emqx:4.4.19 docker://crpi-b3hn9ts05cp0mm2k.cn-chengdu.personal.cr.aliyuncs.com/base-common-image/emqx:4.4.19
+         skopeo copy docker://docker.io/library/redis:6.0.20 docker://crpi-b3hn9ts05cp0mm2k.cn-chengdu.personal.cr.aliyuncs.com/base-common-image/redis:6.0.20
+         skopeo copy docker://docker.io/library/nginx:stable-alpine3.20-perl docker://crpi-b3hn9ts05cp0mm2k.cn-chengdu.personal.cr.aliyuncs.com/base-common-image/nginx:stable-alpine3.20-perl
          
          
          
