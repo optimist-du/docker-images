@@ -27,7 +27,6 @@ jobs:
 
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-         skopeo copy docker://docker.io/library/tdengine/tdengine:3.3.2.0 docker://crpi-b3hn9ts05cp0mm2k.cn-chengdu.personal.cr.aliyuncs.com/base-common-image/tdengine/tdengine:3.3.2.0
          skopeo copy docker://docker.io/library/rabbitmq:management docker://crpi-b3hn9ts05cp0mm2k.cn-chengdu.personal.cr.aliyuncs.com/base-common-image/rabbitmq:management
          skopeo copy docker://docker.io/library/bitnami/kafka:3.3.2 docker://crpi-b3hn9ts05cp0mm2k.cn-chengdu.personal.cr.aliyuncs.com/base-common-image/bitnami/kafka:3.3.2
          
