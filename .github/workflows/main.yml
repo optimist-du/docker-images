@@ -27,7 +27,7 @@ jobs:
 
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-         skopeo copy docker://docker.io/library/bitnami/minio:2024.9.13 docker://crpi-b3hn9ts05cp0mm2k.cn-chengdu.personal.cr.aliyuncs.com/base-common-image/bitnami/minio:2024.9.13
+         skopeo copy docker://docker.io/library/bitnami/minio:latest docker://crpi-b3hn9ts05cp0mm2k.cn-chengdu.personal.cr.aliyuncs.com/base-common-image/bitnami/minio:latest
          skopeo copy docker://docker.io/library/nacos/nacos-server:v2.4.2 docker://crpi-b3hn9ts05cp0mm2k.cn-chengdu.personal.cr.aliyuncs.com/base-common-image/nacos/nacos-server:v2.4.2
          skopeo copy docker://docker.io/library/tdengine/tdengine:3.3.2.0 docker://crpi-b3hn9ts05cp0mm2k.cn-chengdu.personal.cr.aliyuncs.com/base-common-image/tdengine/tdengine:3.3.2.0
          skopeo copy docker://docker.io/library/rabbitmq:management docker://crpi-b3hn9ts05cp0mm2k.cn-chengdu.personal.cr.aliyuncs.com/base-common-image/rabbitmq:management
