@@ -27,7 +27,7 @@ jobs:
 
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-         skopeo copy docker://docker.io/library/openjdk:23-ea-17-jdk docker://crpi-b3hn9ts05cp0mm2k.cn-chengdu.personal.cr.aliyuncs.com/base-common-image/openjdk:23-ea-17-jdk
+         skopeo copy docker://docker.io/library/openjdk:23-ea-17-jdk-slim docker://crpi-b3hn9ts05cp0mm2k.cn-chengdu.personal.cr.aliyuncs.com/base-common-image/openjdk:23-ea-17-jdk-slim
          
          
          
