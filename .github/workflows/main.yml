@@ -27,7 +27,7 @@ jobs:
 
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-         skopeo copy docker://docker.io/library/zookeeper:3.8.1 docker://crpi-b3hn9ts05cp0mm2k.cn-chengdu.personal.cr.aliyuncs.com/base-common-image/zookeeper:3.8.1
+         skopeo copy docker://docker.io/library/wurstmeister/kafka:2.13-2.6.3 docker://crpi-b3hn9ts05cp0mm2k.cn-chengdu.personal.cr.aliyuncs.com/base-common-image/kafka:2.13-2.6.3
          
          
          
